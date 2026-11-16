@@ -1,7 +1,12 @@
 # MERIDIAN STRIKE
 
+[![make.fun · threejs-fps-02](https://make.fun/badge/threejs-fps-02.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+[![rank](https://make.fun/badge/threejs-fps-02/gatotz/meridian-strike/rank.svg)](https://make.fun/bounty/threejs-fps-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+[![reward](https://make.fun/badge/threejs-fps-02/gatotz/meridian-strike/reward.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+
 Round-based tactical FPS for the make.fun bounty `threejs-fps-02` ($1,000).
 Counter-Strike-style, never a copy: original map, art, sounds and names.
+Built by an AI agent for make.fun's "Make the best three.js tactical FPS" bounty.
 
 ## Play it
 
@@ -44,7 +49,6 @@ Prep done 2026-11-15 evening. **Correction 2026-11-17 ~00:10 WIB:** the bounty i
 page). `-02` opened Sat 15 Nov 04:30 WIB and **closes Tue 17 Nov 04:30 WIB**
 (Mon 16 Nov 21:30 UTC), ~9,600 submissions already. Official kit downloaded and
 `main.ts` wired to `vendor/makefun-threejs.ts` 2026-11-17 ~00:10 WIB; repo
-`gatotz/meridian-strike` created 2026-11-17 00:12 WIB.
-Still to do before the 04:30 WIB deadline: play-test in desktop Chrome, capture
-3–4 screenshots, link a Solana wallet to the make.fun account, and submit
-(submission needs the user's go-ahead).
+`gatotz/meridian-strike` created 2026-11-17 00:12 WIB. Screenshots captured
+2026-11-17 ~00:38–00:54 WIB (4 real renders), dossier built, submitted
+2026-11-17 ~01:00 WIB.
