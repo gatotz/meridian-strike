@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MERIDIAN STRIKE — Yard 07</title>
+<style>
+  html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#0b0e14;font-family:'Segoe UI',system-ui,sans-serif;color:#e8ecf1}
+  #app{position:fixed;inset:0}
+  canvas{display:block}
+  .hud{position:absolute;pointer-events:none;user-select:none}
+  #crosshair{left:50%;top:50%;width:22px;height:22px;margin:-11px 0 0 -11px}
+  #crosshair .dot{position:absolute;left:10px;top:10px;width:2px;height:2px;background:#fff;border-radius:50%}
+  #crosshair .arm{position:absolute;background:rgba(255,255,255,.9)}
+  #health{left:24px;bottom:24px;width:240px}
+  #health .bar{height:10px;background:#222a35;border:1px solid #4a5568}
+  #health .fill{height:100%;background:#58d68d;width:100%}
+  #health .num{font-size:28px;font-weight:700;margin-top:2px}
+  #ammo{right:24px;bottom:24px;text-align:right}
+  #ammo .mag{font-size:34px;font-weight:700}
+  #ammo .res{font-size:14px;color:#9aa7b8}
+  #ammo .wpn{font-size:14px;color:#f5c542;margin-top:2px}
+  #top{left:50%;top:14px;transform:translateX(-50%);text-align:center}
+  #timer{font-size:30px;font-weight:700}
+  #score{font-size:15px;color:#c8d2de}
+  #money{font-size:15px;color:#7ee2a0}
+  #relay{font-size:13px;color:#f5c542}
+  #feed{right:24px;top:14px;text-align:right;font-size:13px;line-height:1.5;color:#c8d2de}
+  #banner{left:50%;top:34%;transform:translate(-50%,-50%);text-align:center;display:none}
+  #banner .big{font-size:44px;font-weight:800;letter-spacing:2px}
+  #banner .sub{font-size:16px;color:#c8d2de}
+  #buy{left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(10,14,20,.92);border:1px solid #4a5568;padding:18px 22px;display:none;pointer-events:none}
+  #buy h3{margin:0 0 10px;font-size:16px;color:#f5c542}
+  #buy .row{font-size:14px;line-height:1.9}
+  #buy .key{color:#7ee2a0;font-weight:700}
+  #minimap{left:24px;top:14px;border:1px solid #4a5568;background:rgba(10,14,20,.6)}
+  #hint{left:50%;bottom:8px;transform:translateX(-50%);font-size:12px;color:#8b98a9}
+  #menu{left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;background:rgba(10,14,20,.88);padding:28px 36px;border:1px solid #4a5568}
+  #menu h1{margin:0;font-size:40px;letter-spacing:4px;color:#f5c542}
+  #menu p{color:#c8d2de;font-size:14px;line-height:1.6}
+  #menu .go{font-size:15px;color:#7ee2a0}
+  #hit{left:50%;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;display:none}
+  #hit:before,#hit:after{content:'';position:absolute;background:#ff5a5a;width:2px;height:26px;left:12px}
+  #hit:before{transform:rotate(45deg)} #hit:after{transform:rotate(-45deg)}
+</style>
+<script type="importmap">
+{ "imports": { "three": "./vendor/three.module.min.js" } }
+</script>
+</head>
+<body>
+<div id="app"></div>
+<canvas id="minimap" class="hud" width="150" height="150"></canvas>
+<div id="top" class="hud"><div id="timer">1:40</div><div id="score">AMBER 0 — 0 COBALT</div><div id="money">$800</div><div id="relay"></div></div>
+<div id="feed" class="hud"></div>
+<div id="crosshair" class="hud"><div class="dot"></div><div class="arm" data-arm="t"></div><div class="arm" data-arm="b"></div><div class="arm" data-arm="l"></div><div class="arm" data-arm="r"></div></div>
+<div id="hit" class="hud"></div>
+<div id="health" class="hud"><div class="bar"><div class="fill" id="hpfill"></div></div><div class="num" id="hpnum">100</div></div>
+<div id="ammo" class="hud"><div class="mag" id="mag">12 / ∞</div><div class="res" id="res"></div><div class="wpn" id="wpn">P9 Sidearm</div></div>
+<div id="banner" class="hud"><div class="big" id="bannerBig"></div><div class="sub" id="bannerSub"></div></div>
+<div id="buy" class="hud"><h3>BUY — press 1–4 (B to close)</h3><div class="row" id="buyRows"></div></div>
+<div id="hint" class="hud">WASD move · Shift slow-aim · Mouse look · LMB fire · R reload · B buy · C crouch · Click to lock mouse</div>
+<div id="menu" class="hud"><h1>MERIDIAN STRIKE</h1><p>Yard 07 — Freight Yard · Amber vs Cobalt · first to 5 rounds<br>Eliminate the enemy team, or hold the Relay 10 seconds.<br>Buy weapons between rounds. Accuracy beats speed.</p><p class="go">Click anywhere to play</p></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

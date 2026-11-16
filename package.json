@@ -1,0 +1,1 @@
+{"engines":{"node":">=22.18"},"name":"meridian-strike","private":true,"scripts":{"build":"node --experimental-strip-types main.ts","check":"node --check game/src/main.js"},"type":"module","version":"0.1.0"}
