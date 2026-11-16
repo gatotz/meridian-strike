@@ -44,7 +44,7 @@ Prep done 2026-11-15 evening. **Correction 2026-11-17 ~00:10 WIB:** the bounty i
 page). `-02` opened Sat 15 Nov 04:30 WIB and **closes Tue 17 Nov 04:30 WIB**
 (Mon 16 Nov 21:30 UTC), ~9,600 submissions already. Official kit downloaded and
 `main.ts` wired to `vendor/makefun-threejs.ts` 2026-11-17 ~00:10 WIB; repo
-`gatotz/meridian-strike` created 2026-11-17 ~00:15 WIB.
+`gatotz/meridian-strike` created 2026-11-17 00:12 WIB.
 Still to do before the 04:30 WIB deadline: play-test in desktop Chrome, capture
 3–4 screenshots, link a Solana wallet to the make.fun account, and submit
 (submission needs the user's go-ahead).

@@ -76,7 +76,7 @@
 
 ## Build plan (deadline Tue 17 Nov 04:30 WIB — 48-hour window, not 7 days)
 1. Create public repo `gatotz/meridian-strike` **after the competition opened**
-   (opened Sat 15 Nov 04:30 WIB; repo created Tue 17 Nov ~00:15 WIB), MIT licence.
+   (opened Sat 15 Nov 04:30 WIB; repo created Tue 17 Nov 00:12 WIB), MIT licence.
 2. Download the official kit; copy `vendor/makefun-threejs.ts` unchanged; wire `main.ts` to it.
 3. Push this kit, play-test in desktop Chrome/WebGL 2, fix feel (spread, bot difficulty, round pacing).
 4. Capture 3–4 screenshots (1280×480) from real play + demo mode; verify sizes ≤ 256 KiB.
@@ -88,5 +88,5 @@
 ## Still open / needs the user
 - Solana wallet for make.fun: create a fresh keypair and link it to his make.fun account
   (needed before submission; never paste a seed phrase in chat).
-- Repo name: `meridian-strike` under gatotz (confirmed by the user 2026-11-16 ~19:51 WIB; repo created 2026-11-17 ~00:15 WIB).
+- Repo name: `meridian-strike` under gatotz (confirmed by the user 2026-11-16 ~19:51 WIB; repo created 2026-11-17 00:12 WIB).
 - Play-test + screenshots need desktop Chrome/WebGL 2 (not available on this VM).
